@@ -14,9 +14,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
-import com.beust.jcommander.Parameter;
-import com.beust.jcommander.Parameters;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -38,13 +36,13 @@ public class BaseClass{
 	}
 	
 	
-	@org.testng.annotations.Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass(groups = {"smoke","regression"})
-	public void launchTheBrowser(String BROWSER) throws Throwable
+	public void launchTheBrowser() throws Throwable
 	{	
 		//WebDriverManager.chromedriver().setup();
 		pathOfTheFile=fLib.getFilePathFromPropertiesFile("projectConfigDataFilePath");
-		//String BROWSER = fLib.getDataFromProperties(pathOfTheFile, "browser");
+		String BROWSER = fLib.getDataFromProperties(pathOfTheFile, "browser");
 		String URL = fLib.getDataFromProperties(pathOfTheFile, "url");
 		
 		if(BROWSER.equals("chrome")) {

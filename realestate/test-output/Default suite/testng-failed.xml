@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="houserental_automateTest.RegisterTest">
+      <class name="houserental_automateTest.DetailmoduSyBaseClassTest">
         <methods>
-          <include name="register"/>
+          <include name="details"/>
+          <include name="closeDB"/>
+          <include name="connectToDB"/>
+          <include name="logoutFromTheApplication"/>
+          <include name="loginToApplication"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
         </methods>
-      </class> <!-- houserental_automateTest.RegisterTest -->
+      </class> <!-- houserental_automateTest.DetailmoduSyBaseClassTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

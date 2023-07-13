@@ -1,5 +1,7 @@
 package com.realestate.generic;
 
+import java.util.Random;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,10 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class VerifyComplaintPage {
 	
+	
 	@FindBy(linkText = "Complaint List")
 	private WebElement complainttab;
 	
-	@FindBy(xpath = "//td[text()='mallikarjun']")
+	@FindBy(xpath = "//td[contains(text(),'Mallikarjun')]")
 	private WebElement verifyname;
 	
 	public VerifyComplaintPage(WebDriver driver)
@@ -26,7 +29,9 @@ public class VerifyComplaintPage {
 		return verifyname;
 	}
 	
-	public void verifyComplaintList()
+	
+	
+	public void verifyComplaintList( )
 	{
 		complainttab.click();
 		verifyname.isDisplayed();

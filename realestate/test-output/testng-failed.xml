@@ -1,36 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="FirefoxBrowser(failed)">
-    <parameter name="BROWSER" value="firefox"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="houserental_Baseclass.DetailmoduSyBaseClass">
+      <class name="houserental_automateTest.DetailmoduSyBaseClassTest">
         <methods>
-          <include name="closeDB"/>
-          <include name="connectToDB"/>
           <include name="details"/>
-          <include name="logoutFromTheApplication"/>
-          <include name="loginToApplication"/>
-          <include name="launchTheBrowser"/>
-          <include name="closeTheBrowser"/>
-        </methods>
-      </class> <!-- houserental_Baseclass.DetailmoduSyBaseClass -->
-    </classes>
-  </test> <!-- FirefoxBrowser(failed) -->
-  <test thread-count="2" parallel="tests" name="ChromeBrowser(failed)">
-    <parameter name="BROWSER" value="chrome"/>
-    <classes>
-      <class name="houserental_Baseclass.DetailSystemBaseClass">
-        <methods>
-          <include name="connectToDB"/>
-          <include name="detailSystemBase"/>
           <include name="closeDB"/>
+          <include name="connectToDB"/>
           <include name="logoutFromTheApplication"/>
           <include name="loginToApplication"/>
           <include name="launchTheBrowser"/>
           <include name="closeTheBrowser"/>
         </methods>
-      </class> <!-- houserental_Baseclass.DetailSystemBaseClass -->
+      </class> <!-- houserental_automateTest.DetailmoduSyBaseClassTest -->
     </classes>
-  </test> <!-- ChromeBrowser(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

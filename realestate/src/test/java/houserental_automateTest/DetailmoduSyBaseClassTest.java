@@ -79,7 +79,7 @@ public class DetailmoduSyBaseClassTest extends BaseClass {
 		d.clickonEdit1();
 		Thread.sleep(2000);
 		d.clickonEdit(otherdata);
-
+ 
 		MakeComplaintPage c=new MakeComplaintPage(driver);
 		
 		int name = j.getRandomNumber();

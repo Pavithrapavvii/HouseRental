@@ -1,347 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[connected to database]]>
     </line>
     <line>
+      <![CDATA[Browser is launched]]>
+    </line>
+    <line>
+      <![CDATA[browser is closed]]>
+    </line>
+    <line>
       <![CDATA[database connection is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-11T00:22:36 PDT" name="Suite" finished-at="2023-07-11T00:22:41 PDT" duration-ms="4153">
+  <suite started-at="2023-07-12T23:18:03 PDT" name="Default suite" finished-at="2023-07-12T23:18:34 PDT" duration-ms="31351">
     <groups>
       <group name="regression">
-        <method signature="DetailmoduSyBaseClass.details()[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" name="details" class="houserental_Baseclass.DetailmoduSyBaseClass"/>
+        <method signature="DetailmoduSyBaseClassTest.details()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" name="details" class="houserental_automateTest.DetailmoduSyBaseClassTest"/>
       </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="DetailSystemBaseClass.detailSystemBase()[pri:0, instance:houserental_Baseclass.DetailSystemBaseClass@4e5ed836]" name="detailSystemBase" class="houserental_Baseclass.DetailSystemBaseClass"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-07-11T00:22:36 PDT" name="FirefoxBrowser" finished-at="2023-07-11T00:22:38 PDT" duration-ms="1329">
-      <class name="houserental_Baseclass.DetailmoduSyBaseClass">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" started-at="2023-07-11T00:22:36 PDT" name="connectToDB" finished-at="2023-07-11T00:22:36 PDT" duration-ms="182" status="PASS">
+    <test started-at="2023-07-12T23:18:03 PDT" name="Default test" finished-at="2023-07-12T23:18:34 PDT" duration-ms="31351">
+      <class name="houserental_automateTest.DetailmoduSyBaseClassTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:03 PDT" name="connectToDB" finished-at="2023-07-12T23:18:03 PDT" duration-ms="305" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[connected to database]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="launchTheBrowser(java.lang.String)[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" started-at="2023-07-11T00:22:36 PDT" name="launchTheBrowser" finished-at="2023-07-11T00:22:38 PDT" duration-ms="1238" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[java.net.UnknownHostException: raw.githubusercontent.com]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: raw.githubusercontent.com
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1404)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1420)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1397)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:420)
-at com.realestate.generic.BaseClass.launchTheBrowser(BaseClass.java:54)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.net.UnknownHostException: raw.githubusercontent.com
-at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
-at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:1602)
-at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:102)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1425)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1253)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1172)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:03 PDT" name="launchTheBrowser" finished-at="2023-07-12T23:18:07 PDT" duration-ms="4163" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Browser is launched]]>
+            </line>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" started-at="2023-07-11T00:22:38 PDT" name="loginToApplication" finished-at="2023-07-11T00:22:38 PDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:07 PDT" name="loginToApplication" finished-at="2023-07-12T23:18:08 PDT" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="details()[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" started-at="2023-07-11T00:22:38 PDT" name="details" finished-at="2023-07-11T00:22:38 PDT" duration-ms="0" status="SKIP">
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[java.net.UnknownHostException: raw.githubusercontent.com]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: raw.githubusercontent.com
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1404)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1420)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1397)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1178)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:420)
-at com.realestate.generic.BaseClass.launchTheBrowser(BaseClass.java:54)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.net.UnknownHostException: raw.githubusercontent.com
-at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
-at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
-at io.github.bonigarcia.wdm.WebDriverManager.openGitHubConnection(WebDriverManager.java:1588)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromGitHub(WebDriverManager.java:1602)
-at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.getDriverUrls(FirefoxDriverManager.java:102)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1425)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1253)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1172)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+        <test-method signature="details()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:08 PDT" name="details" finished-at="2023-07-12T23:18:34 PDT" duration-ms="26015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- details -->
-        <test-method is-config="true" signature="logoutFromTheApplication()[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" started-at="2023-07-11T00:22:38 PDT" name="logoutFromTheApplication" finished-at="2023-07-11T00:22:38 PDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logoutFromTheApplication()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:34 PDT" name="logoutFromTheApplication" finished-at="2023-07-12T23:18:34 PDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromTheApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" started-at="2023-07-11T00:22:38 PDT" name="closeTheBrowser" finished-at="2023-07-11T00:22:38 PDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:34 PDT" name="closeTheBrowser" finished-at="2023-07-12T23:18:34 PDT" duration-ms="535" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[browser is closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:houserental_Baseclass.DetailmoduSyBaseClass@23f5b5dc]" started-at="2023-07-11T00:22:41 PDT" name="closeDB" finished-at="2023-07-11T00:22:41 PDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:34 PDT" name="closeDB" finished-at="2023-07-12T23:18:34 PDT" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[database connection is closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- houserental_Baseclass.DetailmoduSyBaseClass -->
-    </test> <!-- FirefoxBrowser -->
-    <test started-at="2023-07-11T00:22:36 PDT" name="ChromeBrowser" finished-at="2023-07-11T00:22:41 PDT" duration-ms="4153">
-      <class name="houserental_Baseclass.DetailSystemBaseClass">
-        <test-method is-config="true" signature="launchTheBrowser(java.lang.String)[pri:0, instance:houserental_Baseclass.DetailSystemBaseClass@4e5ed836]" started-at="2023-07-11T00:22:36 PDT" name="launchTheBrowser" finished-at="2023-07-11T00:22:40 PDT" duration-ms="4106" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b9271c6ba3c7af629a9445639a604f6d, get {url=http://rmgtestingserver/domain/House_Rental_Application/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61918}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61918/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b9271c6ba3c7af629a9445639a604f6d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b9271c6ba3c7af629a9445639a604f6d, get {url=http://rmgtestingserver/domain/House_Rental_Application/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61918}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61918/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b9271c6ba3c7af629a9445639a604f6d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.realestate.generic.BaseClass.launchTheBrowser(BaseClass.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:houserental_Baseclass.DetailSystemBaseClass@4e5ed836]" started-at="2023-07-11T00:22:41 PDT" name="loginToApplication" finished-at="2023-07-11T00:22:41 PDT" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method signature="detailSystemBase()[pri:0, instance:houserental_Baseclass.DetailSystemBaseClass@4e5ed836]" started-at="2023-07-11T00:22:41 PDT" name="detailSystemBase" finished-at="2023-07-11T00:22:41 PDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b9271c6ba3c7af629a9445639a604f6d, get {url=http://rmgtestingserver/domain/House_Rental_Application/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61918}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61918/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b9271c6ba3c7af629a9445639a604f6d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b9271c6ba3c7af629a9445639a604f6d, get {url=http://rmgtestingserver/domain/House_Rental_Application/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61918}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61918/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b9271c6ba3c7af629a9445639a604f6d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.realestate.generic.BaseClass.launchTheBrowser(BaseClass.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detailSystemBase -->
-        <test-method is-config="true" signature="logoutFromTheApplication()[pri:0, instance:houserental_Baseclass.DetailSystemBaseClass@4e5ed836]" started-at="2023-07-11T00:22:41 PDT" name="logoutFromTheApplication" finished-at="2023-07-11T00:22:41 PDT" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromTheApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:houserental_Baseclass.DetailSystemBaseClass@4e5ed836]" started-at="2023-07-11T00:22:41 PDT" name="closeTheBrowser" finished-at="2023-07-11T00:22:41 PDT" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-      </class> <!-- houserental_Baseclass.DetailSystemBaseClass -->
-    </test> <!-- ChromeBrowser -->
-  </suite> <!-- Suite -->
+      </class> <!-- houserental_automateTest.DetailmoduSyBaseClassTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
