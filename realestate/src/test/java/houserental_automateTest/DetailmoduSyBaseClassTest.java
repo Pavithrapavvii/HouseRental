@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.idealized.Javascript;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.realestate.generic.BaseClass;
@@ -71,6 +72,7 @@ public class DetailmoduSyBaseClassTest extends BaseClass {
 		Thread.sleep(2000);
 		d.clickonDetail();
 	
+		
 		
 		//d.getDetailtab().click();
 		

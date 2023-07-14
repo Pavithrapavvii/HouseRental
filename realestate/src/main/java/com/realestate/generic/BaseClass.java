@@ -40,7 +40,7 @@ public class BaseClass{
 	@BeforeClass(groups = {"smoke","regression"})
 	public void launchTheBrowser() throws Throwable
 	{	
-		//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		pathOfTheFile=fLib.getFilePathFromPropertiesFile("projectConfigDataFilePath");
 		String BROWSER = fLib.getDataFromProperties(pathOfTheFile, "browser");
 		String URL = fLib.getDataFromProperties(pathOfTheFile, "url");
