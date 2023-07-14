@@ -12,6 +12,7 @@ import org.openqa.selenium.devtools.idealized.Javascript;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.realestate.generic.BaseClass;
@@ -26,6 +27,8 @@ import com.realestate.generic.MakeComplaintPage;
 import com.realestate.generic.RegisterPage;
 import com.realestate.generic.VerifyComplaintPage;
 import com.realestate.generic.WebActionUtility;
+
+@Listeners(com.realestate.genericclass.ListenerImplimentation.class)
 
 public class DetailmoduSyBaseClassTest extends BaseClass {
 
