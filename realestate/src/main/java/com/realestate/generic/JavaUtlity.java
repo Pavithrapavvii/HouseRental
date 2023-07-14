@@ -1,4 +1,4 @@
-package com.realestate.generic;
+  package com.realestate.generic;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -11,7 +11,7 @@ import java.util.Random;
  * @author Deepak
  *
  */
-public class JavaUtlity {
+public class JavaUtlity { 
 
 	Random random = new Random();
 	Date dateObj = new Date();

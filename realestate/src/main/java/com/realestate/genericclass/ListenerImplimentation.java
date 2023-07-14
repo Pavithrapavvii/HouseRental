@@ -3,6 +3,7 @@ package com.realestate.genericclass;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -14,6 +15,8 @@ import org.testng.ITestResult;
 public class ListenerImplimentation implements ITestListener{
 
 	public void onTestStart(ITestResult result) {
+		Random random=new Random();
+		int randNum = random.nextInt(1000);
 		
 	}
 
