@@ -14,48 +14,48 @@
       <![CDATA[database connection is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-12T23:18:03 PDT" name="Default suite" finished-at="2023-07-12T23:18:34 PDT" duration-ms="31351">
+  <suite started-at="2023-07-14T22:42:44 IST" name="Default suite" finished-at="2023-07-14T22:43:13 IST" duration-ms="29122">
     <groups>
       <group name="regression">
-        <method signature="DetailmoduSyBaseClassTest.details()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" name="details" class="houserental_automateTest.DetailmoduSyBaseClassTest"/>
+        <method signature="DetailmoduSyBaseClassTest.details()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" name="details" class="houserental_automateTest.DetailmoduSyBaseClassTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2023-07-12T23:18:03 PDT" name="Default test" finished-at="2023-07-12T23:18:34 PDT" duration-ms="31351">
+    <test started-at="2023-07-14T22:42:44 IST" name="Default test" finished-at="2023-07-14T22:43:13 IST" duration-ms="29122">
       <class name="houserental_automateTest.DetailmoduSyBaseClassTest">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:03 PDT" name="connectToDB" finished-at="2023-07-12T23:18:03 PDT" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" started-at="2023-07-14T22:42:43 IST" name="connectToDB" finished-at="2023-07-14T22:42:44 IST" duration-ms="1174" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[connected to database]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:03 PDT" name="launchTheBrowser" finished-at="2023-07-12T23:18:07 PDT" duration-ms="4163" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" started-at="2023-07-14T22:42:44 IST" name="launchTheBrowser" finished-at="2023-07-14T22:42:49 IST" duration-ms="4117" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:07 PDT" name="loginToApplication" finished-at="2023-07-12T23:18:08 PDT" duration-ms="566" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" started-at="2023-07-14T22:42:49 IST" name="loginToApplication" finished-at="2023-07-14T22:42:49 IST" duration-ms="719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="details()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:08 PDT" name="details" finished-at="2023-07-12T23:18:34 PDT" duration-ms="26015" status="PASS">
+        <test-method signature="details()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" started-at="2023-07-14T22:42:49 IST" name="details" finished-at="2023-07-14T22:43:13 IST" duration-ms="23603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- details -->
-        <test-method is-config="true" signature="logoutFromTheApplication()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:34 PDT" name="logoutFromTheApplication" finished-at="2023-07-12T23:18:34 PDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logoutFromTheApplication()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" started-at="2023-07-14T22:43:13 IST" name="logoutFromTheApplication" finished-at="2023-07-14T22:43:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromTheApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:34 PDT" name="closeTheBrowser" finished-at="2023-07-12T23:18:34 PDT" duration-ms="535" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" started-at="2023-07-14T22:43:13 IST" name="closeTheBrowser" finished-at="2023-07-14T22:43:13 IST" duration-ms="387" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[browser is closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@194fad1]" started-at="2023-07-12T23:18:34 PDT" name="closeDB" finished-at="2023-07-12T23:18:34 PDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:houserental_automateTest.DetailmoduSyBaseClassTest@6e2829c7]" started-at="2023-07-14T22:43:14 IST" name="closeDB" finished-at="2023-07-14T22:43:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[database connection is closed]]>
